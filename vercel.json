@@ -1,6 +1,21 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
-    { "source": "/church", "destination": "https://site-mu-one-42.vercel.app/church" },
-    { "source": "/church/:path*", "destination": "https://site-mu-one-42.vercel.app/church/:path*" }
+    {
+      "source": "/church",
+      "destination": "https://site-mu-one-42.vercel.app/church/"
+    },
+    {
+      "source": "/church/",
+      "destination": "https://site-mu-one-42.vercel.app/church/"
+    },
+    {
+      "source": "/church/:path*/",
+      "destination": "https://site-mu-one-42.vercel.app/church/:path*/"
+    },
+    {
+      "source": "/church/:path*",
+      "destination": "https://site-mu-one-42.vercel.app/church/:path*"
+    }
   ]
 }
